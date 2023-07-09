@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework-1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+  <div class="row delivery-row py-5">
+    <form action="/check" method="POST">
+      <h2 class="text-center pb-5">1.Оберіть мову програмування</h2>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="language" value="java" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          JAVA
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="language" value="java-script"  id="flexRadioDefault2"
+               checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Java Script
+        </label>
+      </div>
+      <h2 class="text-center pb-5">2.Оберіть форму навчання</h2>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="education" value="day" id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3">
+          Денна форма навчання
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="education" value="distance"
+               id="flexRadioDefault4"
+               checked>
+        <label class="form-check-label" for="flexRadioDefault4">
+          Заочна форма навчання
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary my-5">Надіслати</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
