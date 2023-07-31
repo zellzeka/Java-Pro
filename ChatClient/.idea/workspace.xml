@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46c5d0ac-81e2-4e07-b458-0be23bd85f72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JdbcDAO1/JdbcDAO1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/prog/GetUsersOnline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/academy/prog/GetUsersSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/GetOnlineUsersServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/UsersList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/Utils.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BWvctl4YKFm4jzQwCjf5i6cJsz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/JAVA/JavaPro/Java-Pro/ChatClient&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/academy/prog" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.prog.Main" />
+      <module name="chat-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.prog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46c5d0ac-81e2-4e07-b458-0be23bd85f72" name="Changes" comment="" />
+      <created>1657034739431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657034739431</updated>
+      <workItem from="1657034740892" duration="3397000" />
+      <workItem from="1665676272968" duration="2522000" />
+      <workItem from="1666175694896" duration="23000" />
+      <workItem from="1666280841676" duration="685000" />
+      <workItem from="1672937186643" duration="65000" />
+      <workItem from="1672937364631" duration="2970000" />
+      <workItem from="1678455805261" duration="12000" />
+      <workItem from="1678467984691" duration="49000" />
+      <workItem from="1689175269257" duration="639000" />
+      <workItem from="1689178430862" duration="644000" />
+      <workItem from="1689230724382" duration="492000" />
+      <workItem from="1689509290928" duration="2056000" />
+      <workItem from="1689576716060" duration="13456000" />
+      <workItem from="1689682219439" duration="9769000" />
+      <workItem from="1689747580317" duration="1964000" />
+      <workItem from="1689749554111" duration="19000" />
+      <workItem from="1689749593139" duration="3110000" />
+      <workItem from="1689755983122" duration="693000" />
+      <workItem from="1689756716541" duration="1670000" />
+      <workItem from="1689762590552" duration="3047000" />
+      <workItem from="1689768037485" duration="3132000" />
+      <workItem from="1689771919644" duration="513000" />
+      <workItem from="1689772471112" duration="2250000" />
+      <workItem from="1689774752590" duration="82000" />
+      <workItem from="1690299889833" duration="5573000" />
+      <workItem from="1690305582987" duration="1809000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
+    <option name="sizePresets">
+      <list>
+        <SizePreset>
+          <option name="caption" value="Phone" />
+          <option name="height" value="568" />
+          <option name="width" value="320" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Tablet" />
+          <option name="height" value="1024" />
+          <option name="width" value="768" />
+        </SizePreset>
+        <SizePreset>
+          <option name="caption" value="Desktop" />
+          <option name="height" value="900" />
+          <option name="width" value="1440" />
+        </SizePreset>
+      </list>
+    </option>
+  </component>
+</project>

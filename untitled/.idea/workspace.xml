@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="56c187e8-af98-4e74-b42c-895337e441c0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ChatClient/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatClient/src/main/java/academy/prog/GetUsersOnline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatClient/src/main/java/academy/prog/GetUsersSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/GetOnlineUsersServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/UsersList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../homework4/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/.idea/jdbc11.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jdbc11/jdbc11.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2SyZR9IAS42jGEMDTmssqLnulCH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56c187e8-af98-4e74-b42c-895337e441c0" name="Changes" comment="" />
+      <created>1690120771589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690120771589</updated>
+      <workItem from="1690120772698" duration="717000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
