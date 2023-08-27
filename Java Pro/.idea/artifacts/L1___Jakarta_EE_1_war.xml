@@ -9,6 +9,12 @@
     </properties>
     <root id="archive" name="JakartaEE1-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="L1 - Jakarta EE 1:war exploded" />
+      <element id="javaee-facet-resources" facet="JakartaEE1/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JakartaEE1" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

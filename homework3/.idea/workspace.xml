@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="019e3824-2023-4581-95e1-683a737d201b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ChatServer/chat-server.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/.idea/artifacts/homework7_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatClient/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatClient/src/main/java/academy/prog/GetUsersList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ChatServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/GetOnlineUsersServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/UsersList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ChatServer/src/main/java/academy/prog/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/.idea/artifacts/L1___Jakarta_EE_1_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Pro/.idea/artifacts/L1___Jakarta_EE_1_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Pro/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Java Pro/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/Lesson1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/Lesson1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/Lesson1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/Lesson1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/Lesson1/Lesson1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/Lesson1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java Pro/homework1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../L2 - LoginEE/.idea/artifacts/L2___LoginEE_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../L2 - LoginEE/.idea/artifacts/L2___LoginEE_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../L2 - LoginEE/target/L2LoginEE-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../L2 - LoginEE/target/L2LoginEE-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/java/servlet/StatisticsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/java/servlet/StatisticsServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2UFhssTpyhVA9HY7hSfv4JkB1s6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/JAVA/JavaPro/Java-Pro/homework3",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="019e3824-2023-4581-95e1-683a737d201b" name="Changes" comment="" />
+      <created>1692541445360</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692541445360</updated>
+      <workItem from="1692541446370" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
