@@ -1,7 +1,10 @@
-package ua.kiev.prog;
+package org.example;
 
+import jdk.dynalink.Operation;
+import org.springframework.beans.factory.annotation.CustomAutowireConfigurer;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.servlet.view.script.ScriptTemplateConfig;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,11 +27,6 @@ public class UserService {
         return userRepository.findByLogin(login);
     }
 
-    @Transactional(readOnly = true)
-    public CustomUser findId (Long id ){
-        return userRepository.findById(id).get();
-    }
-
     @Transactional
     public void deleteUsers(List<Long> ids) {
         ids.forEach(id -> {
@@ -39,6 +37,11 @@ public class UserService {
                 }
             });
         });
+    }
+
+    @Transactional(readOnly = true)
+    public CustomUser findID (Long id ){
+        return userRepository.findById(id).get();
     }
 
     @Transactional
@@ -56,15 +59,37 @@ public class UserService {
     }
 
     @Transactional
-    public void updateUser(String login, String email, String phone, String address) {
+    public void updateUser(String login, String email, String phone) {
         CustomUser user = userRepository.findByLogin(login);
+
         if (user == null)
             return;
 
         user.setEmail(email);
         user.setPhone(phone);
-        user.setAddress(address);
 
+        userRepository.save(user);
+    }
+
+    @Transactional
+    public void edit (String login, String email,String phone,String address){
+        CustomUser user = userRepository.findByLogin(login);
+
+        if (user == null)
+            return;
+
+        user.setAddress(address);
+        user.setPhone(phone);
+        user.setEmail(email);
+        userRepository.save(user);
+    }
+
+    @Transactional
+    public void newAddress(String login,String address){
+        CustomUser user = userRepository.findByLogin(login);
+        if (user ==null)
+            return;
+        user.setAddress(address);
         userRepository.save(user);
     }
 }

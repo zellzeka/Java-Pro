@@ -16,31 +16,37 @@
 
     <button type="button" id="add_user">Add</button>
     <button type="button" id="delete_user">Delete</button>
-    <button type="button" id="edit_user">Edit user data</button>
+    <button type="button" id="edit_user">Edit</button>
+
 
     <table border="1">
         <c:forEach items="${users}" var="user">
-            <tr>
-                <td><input type="checkbox" name="toDelete" value="${user.id}" id="check_${user.id}"></td>
-                <td><c:out value="${user.login}"/></td>
-                <td><c:out value="${user.role}"/></td>
-                <td><c:out value="${user.email}"/></td>
-                <td><c:out value="${user.phone}"/></td>
-                <td><c:out value="${user.address}"/></td>
-            </tr>
-        </c:forEach>
+        <tr>
+            <td><input type="checkbox" name="toDelete" value="${user.id}" id="check_${user.id}"></td>
+            <td><c:out value="${user.login}"/></td>
+            <td><c:out value="${user.role}"/></td>
+            </c:forEach>
     </table>
+
 </div>
-
-
 
 <script>
     $('#add_user').click(function(){
         window.location.href = "/register";
     });
 
+
+    $('#edit_user').click(function () {
+        var selectedUserId = $('input[name="toDelete"]:checked').val();
+        if (selectedUserId) {
+            $.get("/admin/edit", { id: selectedUserId }, function (data, status) {
+                window.location.href = "/admin/edit?id=" + selectedUserId;
+            });
+        }
+    });
+
     $('#delete_user').click(function(){
-        let data = {'toDelete': []};
+        var data = { 'toDelete' : []};
         $(":checked").each(function() {
             data['toDelete'].push($(this).val());
         });
@@ -48,12 +54,7 @@
             window.location.reload();
         });
     });
-    $('#edit_user').click(function () {
-        let id = $('input[name="toDelete"]:checked').val();
-        $.get("/admin/edit", { id: id }, function (data, status) {
-            window.location.href = "/admin/edit?id=" + id;
-        });
-    });
+
 </script>
 
 </body>

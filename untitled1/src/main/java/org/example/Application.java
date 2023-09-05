@@ -1,14 +1,11 @@
-package academy.prog;
+package org.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HappyUrlApplication {
-
+public class Application {
     public static void main(String[] args) {
-
-        SpringApplication.run(HappyUrlApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
-
 }

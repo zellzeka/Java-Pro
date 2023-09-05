@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -61,5 +62,20 @@ public class UrlController {
     @GetMapping("stat")
     public List<UrlStatDTO> stat() {
         return urlService.getStatistics();
+    }
+
+    @PostMapping("shorten/list")
+    public List<UrlResultDTO> shorten(@RequestBody String... url) {
+        List<UrlResultDTO> urlList = new ArrayList<>();
+        for (String currentUrl: url) {
+            var urlDTO = new UrlDTO();
+            urlDTO.setUrl(currentUrl);
+            long id = urlService.saveUrl(urlDTO);
+            var result = new UrlResultDTO();
+            result.setUrl(urlDTO.getUrl());
+            result.setShortUrl(Long.toString(id));
+            urlList.add(result);
+        }
+        return urlList;
     }
 }

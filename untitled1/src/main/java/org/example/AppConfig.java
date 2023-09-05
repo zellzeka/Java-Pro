@@ -1,4 +1,4 @@
-package ua.kiev.prog;
+package org.example;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -7,7 +7,6 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.filter.CharacterEncodingFilter;
 
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -29,13 +28,5 @@ public class AppConfig extends GlobalMethodSecurityConfiguration {
                         UserRole.USER, "", "", "");
             }
         };
-    }
-
-    @Bean
-    public CharacterEncodingFilter characterEncodingFilter() {
-        CharacterEncodingFilter filter = new CharacterEncodingFilter();
-        filter.setEncoding("UTF-8");
-        filter.setForceEncoding(true);
-        return filter;
     }
 }

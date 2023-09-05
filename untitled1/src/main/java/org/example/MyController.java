@@ -1,4 +1,4 @@
-package ua.kiev.prog;
+package org.example;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.GrantedAuthority;
@@ -8,6 +8,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -40,34 +41,22 @@ public class MyController {
 
     @PostMapping(value = "/update")
     public String update(@RequestParam(required = false) String email,
-                         @RequestParam(required = false) String phone,
-                         @RequestParam(required = false) String address) {
+                         @RequestParam(required = false) String phone) {
         User user = getCurrentUser();
-
         String login = user.getUsername();
-        userService.updateUser(login, email, phone, address);
+        userService.updateUser(login, email, phone);
 
         return "redirect:/";
     }
 
-    @GetMapping("/admin/edit")
-    public String edit(@RequestParam(name = "id") Long id, Model model){
-        CustomUser user = userService.findId(id);
-        model.addAttribute("email", user.getEmail());
-        model.addAttribute("phone", user.getPhone());
-        model.addAttribute("address", user.getAddress());
-        model.addAttribute("login",user.getLogin());
-        return "edit";
-    }
-
-    @PostMapping(value = "/admin/update")
+    @PostMapping(value = "/admin_edit")
     public String adminUpdate(@RequestParam String login,
-                         @RequestParam(required = false) String email,
-                         @RequestParam(required = false) String phone,
-                         @RequestParam(required = false) String address) {
-        userService.updateUser(login, email, phone, address);
+                              @RequestParam(required = false) String email,
+                              @RequestParam(required = false) String phone,
+                              @RequestParam(required = false) String address){
 
-        return "redirect:/admin";
+        userService.edit(login,email,phone,address);
+        return "redirect:/";
     }
 
     @PostMapping(value = "/newuser")
@@ -111,7 +100,6 @@ public class MyController {
     @PreAuthorize("hasRole('ROLE_ADMIN')") // SpEL !!!
     public String admin(Model model) {
         model.addAttribute("users", userService.getAllUsers());
-
         return "admin";
     }
 
@@ -120,6 +108,33 @@ public class MyController {
         User user = getCurrentUser();
         model.addAttribute("login", user.getUsername());
         return "unauthorized";
+    }
+
+    @GetMapping("/address")
+    public String setA(){
+        return "address";
+    }
+
+    @PostMapping(value = "/address/set")
+    public String set (@RequestParam(required = false) String address){
+        User user = getCurrentUser();
+        String login = user.getUsername();
+        userService.newAddress(login,address);
+
+        return "redirect:/";
+    }
+
+    @GetMapping("/admin/edit")
+    public String edit(@RequestParam(name = "id") Long id, Model model){
+        CustomUser dUser = userService.findID(id);
+        model.addAttribute("email", dUser.getEmail());
+        model.addAttribute("phone", dUser.getPhone());
+        model.addAttribute("address", dUser.getAddress());
+        model.addAttribute("login",dUser.getLogin());
+        if(dUser.getLogin().equals("admin")){
+            return "login";
+        }
+        return "edit";
     }
 
     // ----
