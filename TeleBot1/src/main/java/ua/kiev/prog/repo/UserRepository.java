@@ -12,5 +12,10 @@ public interface UserRepository extends JpaRepository<User, Long> {
             "AND u.phone IS NOT NULL AND u.email IS NOT NULL")
     List<User> findNewUsers();
 
+    @Query("SELECT u FROM User u WHERE u.email = ?1")
+    User findByEmail(String email);
+
     User findByChatId(long id);
+
+
 }

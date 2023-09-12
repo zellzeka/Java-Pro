@@ -46,5 +46,16 @@ public class UserService {
     public void updateUser(User user) {
         userRepository.save(user);
     }
+
+
+    @Transactional
+    public  User findByEmail (String email){
+       return userRepository.findByEmail(email);
+    }
+
+    @Transactional
+    public  void deleteUser(User user){
+        userRepository.delete(user);
+    }
 }
 

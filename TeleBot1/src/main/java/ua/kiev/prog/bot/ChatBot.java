@@ -26,6 +26,8 @@ public class ChatBot extends TelegramLongPollingBot {
     private static final String BROADCAST = "broadcast ";
     private static final String LIST_USERS = "users";
 
+    private static final String DELETE_USER = "delete ";
+
     @Value("${bot.name}")
     private String botName;
 
@@ -111,6 +113,14 @@ public class ChatBot extends TelegramLongPollingBot {
 
             listUsers(user);
             return true;
+        } else if (text.startsWith(DELETE_USER)) {
+            LOGGER.info("Admin command received: " + DELETE_USER);
+
+            text = text.substring(DELETE_USER.length());
+            if (!Utils.isValidEmailAddress(text))return false;
+            User searchedUser = userService.findByEmail(text);
+            userService.deleteUser(searchedUser);
+            return true;
         }
 
         return false;
@@ -151,6 +161,8 @@ public class ChatBot extends TelegramLongPollingBot {
                     .append(user.getPhone())
                     .append(' ')
                     .append(user.getEmail())
+                    .append(' ')
+                    .append(user.getWishes())
                     .append("\r\n")
         );
 
