@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Base64;
 import java.util.Date;
 
 @Entity
@@ -30,8 +31,9 @@ public class Message {
     @Column(name = "file_name")
     private String fileName;
 
+    @Lob
     @Column(name = "file_data")
-    private String fileData; // Base64(x) -> text
+    private byte[] fileData; // Base64(x) -> text
 
     public static Message fromDTO(MessageDTO dto) {
         var result = new Message();
@@ -42,7 +44,13 @@ public class Message {
         result.setFrom(dto.getFrom());
         result.setText(dto.getText());
         result.setFileName(dto.getFileName());
-        result.setFileData(dto.getFileData());
+
+        if(dto.getFileData() != null){
+            byte[] binaryData = Base64.getDecoder().decode(dto.getFileData());
+            result.setFileData(binaryData);
+        } else {
+            result.setFileData(null);
+        }
 
         return result;
     }
@@ -56,8 +64,13 @@ public class Message {
         result.setFrom(from);
         result.setText(text);
         result.setFileName(fileName);
-        result.setFileData(fileData);
 
+        if(fileData != null){
+            String data = Base64.getEncoder().encodeToString(fileData);
+            result.setFileData(data);
+        } else{
+            result.setFileData(null);
+        }
         return result;
     }
 }
