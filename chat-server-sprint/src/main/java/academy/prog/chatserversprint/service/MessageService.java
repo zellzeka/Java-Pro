@@ -26,6 +26,7 @@ public class MessageService {
     public void add(MessageDTO messageDTO) {
         var message = Message.fromDTO(messageDTO);
         messageRepository.save(message);
+
     }
 
     @Transactional(readOnly = true)
@@ -37,17 +38,19 @@ public class MessageService {
         return result;
     }
 
-    @Transactional
+    @Transactional(readOnly = true)
     public Optional <FileDTO> getFileById(Long id){
         var messageOptional = messageRepository.findById(id);
         if (messageOptional.isPresent()) {
             Message message = messageOptional.get();
-            FileDTO file = new FileDTO();
-            file.setFileName(message.getFileName());
-            String data = Base64.getEncoder().encodeToString(message.getFileData());
-            file.setFileData(data);
+            FileDTO file = message.toFileDTO();
 
             return Optional.of(file);
         } else return Optional.empty();
+    }
+
+    @Transactional(readOnly = true)
+    public List<String> onlineUsers(){
+        return messageRepository.findAllUsers();
     }
 }

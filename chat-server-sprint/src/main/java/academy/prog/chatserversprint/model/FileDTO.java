@@ -2,10 +2,13 @@ package academy.prog.chatserversprint.model;
 
 import lombok.Data;
 
-@Data
-public class FileDTO {
-    private String fileName;
+import java.util.ArrayList;
+import java.util.List;
 
-    private String fileData;
+@Data
+public class FileDTO extends MessageDTO{
+    private List<String> fileName = new ArrayList<>();
+
+    private List<String> fileData = new ArrayList<>();
 
 }

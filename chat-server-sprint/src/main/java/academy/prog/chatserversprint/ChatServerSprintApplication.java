@@ -23,6 +23,7 @@ public class ChatServerSprintApplication {
                     auth.requestMatchers(HttpMethod.POST, "/add").permitAll();
                     auth.requestMatchers(HttpMethod.GET, "/get").permitAll();
                     auth.requestMatchers(HttpMethod.GET, "/file").permitAll();
+                    auth.requestMatchers(HttpMethod.GET, "/online").permitAll();
                 })
                 .httpBasic(withDefaults());
 

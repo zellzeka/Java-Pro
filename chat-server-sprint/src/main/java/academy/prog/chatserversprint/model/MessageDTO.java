@@ -3,7 +3,9 @@ package academy.prog.chatserversprint.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class MessageDTO {
@@ -18,7 +20,7 @@ public class MessageDTO {
 
     private String text;
 
-    private String fileName;
+    private List<String> fileName = new ArrayList<>();
 
-    private String fileData;
+    private List<String> fileData = new ArrayList<>();
 }

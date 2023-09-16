@@ -4,8 +4,10 @@ import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.Base64;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -28,12 +30,11 @@ public class Message {
     @Column(name = "msg_text", nullable = false)
     private String text;
 
-    @Column(name = "file_name")
-    private String fileName;
+    @ElementCollection
+    private List <String> fileName = new ArrayList<>();
 
-    @Lob
-    @Column(name = "file_data")
-    private byte[] fileData; // Base64(x) -> text
+    @ElementCollection
+    private List<byte[]> fileData = new ArrayList<>();
 
     public static Message fromDTO(MessageDTO dto) {
         var result = new Message();
@@ -44,12 +45,15 @@ public class Message {
         result.setFrom(dto.getFrom());
         result.setText(dto.getText());
         result.setFileName(dto.getFileName());
+        List<String> fileDataDTO = dto.getFileData();
 
-        if(dto.getFileData() != null){
-            byte[] binaryData = Base64.getDecoder().decode(dto.getFileData());
-            result.setFileData(binaryData);
-        } else {
-            result.setFileData(null);
+        for (String data : fileDataDTO) {
+            if(data != null){
+                byte[] binaryData = Base64.getDecoder().decode(data);
+                result.getFileData().add(binaryData);
+            } else {
+                result.getFileData().add(null);
+            }
         }
 
         return result;
@@ -63,14 +67,27 @@ public class Message {
         result.setDate(date);
         result.setFrom(from);
         result.setText(text);
-        result.setFileName(fileName);
-
-        if(fileData != null){
-            String data = Base64.getEncoder().encodeToString(fileData);
-            result.setFileData(data);
-        } else{
-            result.setFileData(null);
-        }
+        encodeData(result);
+        System.out.println(result);
         return result;
+    }
+
+    public FileDTO toFileDTO() {
+        var result = new FileDTO();
+        encodeData(result);
+        return result;
+    }
+
+    public void encodeData(MessageDTO dto){
+        dto.setFileName(fileName);
+
+        for (byte[] data : fileData) {
+            if(data != null){
+                String encodedData = Base64.getEncoder().encodeToString(data);
+                dto.getFileData().add(encodedData);
+            } else{
+                dto.getFileData().add(null);
+            }
+        }
     }
 }

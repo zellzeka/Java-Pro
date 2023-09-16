@@ -42,6 +42,11 @@ public class MessageController {
         } else return ResponseEntity.notFound().build();
     }
 
+    @GetMapping("online")
+    public List<String> online() {
+        return messageService.onlineUsers();
+    }
+
     @GetMapping("test")
     public String test() {
         return "It works!";
